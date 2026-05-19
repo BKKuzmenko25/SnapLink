@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+
+.header {
+    margin-left: 202px;
+    text-align: center;
+    background-color:darkgreen;
+    padding:10px;
+}
+
+.mtext {
+    margin-left: 220px;
+    font-size: 150%;
+    color:white;
+}
+
+
+.menu {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    width: 200px;
+    background-color:rgba(54, 128, 202, 0.563);
+    color:#f4f4f4;
+    height:100%;
+    position:fixed;
+    overflow:auto;
+    top: 8px;
+    left: 10px;
+}
+
+.menu li a {
+    display: block;
+    color: #f4f4f4;
+    background-color:darkslategrey;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover:not(.active) {
+    background-color: #555555;
+    color: white;
+}
+
+.menu .active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}

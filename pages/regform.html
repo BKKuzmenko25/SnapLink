@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Регестрирай се</title>
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Регистрационна форма</h1>
+            <p>Регестрирайте се, ако имате желание</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Начална страница</a></li>
+            <li><a href="about.html">За клуба</a></li>
+            <li><a href="events.html">Събития</a></li>
+            <li><a href="gallery.html">Галерия</a></li>
+            <li><a href="regform.html" class="active">Регистрация</a></li>
+        </ul>
+
+        <div class="mtext">
+            <p>Ако фотографията ви е интересна и искате да подобрите уменията си, можете да се присъедините към клуба. Не е необходимо да имате професионален фотоапарат – важно е желанието да се учите и да експериментирате.</p>
+            <p>Срещите на клуба се провеждат редовно и включват както обучение, така и практическо снимане.</p>
+            <form action="success.html">
+                <fieldset>
+                <legend>Попълнете формата:</legend>
+                <label for="fname">Първо име:</label> <br>
+                <input type="text" id="fname" name="first name"> <br>
+
+                <label for="lname">Второ име:</label> <br>
+                <input type="text" id="lname" name="last name"> <br>
+
+                <label for="age">Възраст:</label> <br>
+                <input type="date" id="age" name="age"> <br>
+
+                <label for="phone">Телефон</label> <br>
+                <input type="tel" id="phone" name="phone number"> <br>
+
+                <input type="submit" value="Изпрати"> <br>
+                <input type="reset" value="Изчисти">
+
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

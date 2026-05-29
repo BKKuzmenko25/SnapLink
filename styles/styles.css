@@ -1,41 +1,96 @@
 body {
-    background-color: black;
-    margin: 0;
+    background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), 
+                url('../images/leafy-bg.jpeg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-color: #121212;
+        font-family: 'Montserrat', sans-serif;
 }
+
+
+.blank{
+    width: 500px;
+}
+
+ul {
+    list-style-position: outside; 
+    text-align: left;         
+    display: table;           
+    margin: 0 auto;           
+    padding-left: 20px;       
+}
+
+.photogroup{
+    border: 2px solid #04AA6D;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 35px;
+}
+.photogroup legend{
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #04AA6D;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+
+.pic{
+    border: 8px solid #04AA6D;
+    border-radius: 8px;       
+    box-shadow: 0 0 20px rgba(4, 170, 109, 0.4);
+}
+
+hr{
+    background-color: #088008;
+    border-color: #1bbd1b;
+}
+
 
 .header {
-    margin-left: 200px;
     text-align: center;
-    background-color:darkgreen;
-    padding:10px;
+    background-color:rgb(153, 202, 153);
+    padding:40px;
 }
 
-.mtext {
-    margin-left: 220px;
-    font-size: 150%;
-    color:white;
+h1{
+    font-size: 40px;
 }
+
+p{
+    font-size: 30px;
+}
+
+
+.mtext {
+    text-align: center;
+    font-size: 250%;
+    color: white;
+}
+
 
 .menu {
     list-style-type: none;
-    margin:0;
-    padding: 0;
-    width:200px;
-    background-color:rgba(54, 128, 202, 0.563);
-    color:#f4f4f4;
-    height:100%;
-    position:fixed;
-    overflow:auto;
-    top: 0;
-    left: 0;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(24, 75, 24, 0.563);
+    color: #f4f4f4;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    position: static;
 }
 
 .menu li a {
     display: block;
     color: #f4f4f4;
     background-color:darkslategrey;
-    padding:8px 16px;
+    padding: 16px 32px;
     text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .menu li a:hover:not(.active) {
@@ -46,50 +101,6 @@ body {
 .menu .active {
     background-color: #04AA6D;
     color: white;
-}
-
-@media screen and (max-width: 900px) {
-    .menu {
-        width: 100%;
-        height: auto;
-        position: relative;
-        background-color: black;
-        left:0;
-        top:0;
-        display:flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        box-sizing: border-box;
-    }
-    .menu li {
-        flex:1;
-    }
-    
-    .menu li a {
-        display: block;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .mtext {margin-left: 10px;}
-    .header {margin-left: 0;}
-}
-
-@media screen and (max-width: 500px) {
-    .menu {
-        flex-direction: column;
-    }
-
-    .menu li {
-        flex: none;
-        width: 100%;
-    }
-
-    .menu li a {
-        text-align: center;
-    }
 }
 
 .btn {
